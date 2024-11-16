@@ -4,12 +4,14 @@ const PORT = process.env.PORT || 3000;
 
 // Route 1: Respond with my full name
 app.get("/name", (req, res) => {
-  res.status(200).send("Kirubel");
+  res.status(200).send("Kirubel Desyalew ");
 });
 
 // Route 2: Respond with my favorite hobby as a JSON object
 app.get("/hobby", (req, res) => {
-  res.status(200).json({ hobby: "Playing Guitar" });
+  res
+    .status(200)
+    .json({ hobby1: "Watching football" }, { hobby2: "playing pool" });
 });
 
 // Route 3: Respond with a motivational message about my dream
