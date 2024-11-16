@@ -9,9 +9,7 @@ app.get("/name", (req, res) => {
 
 // Route 2: Respond with my favorite hobby as a JSON object
 app.get("/hobby", (req, res) => {
-  res
-    .status(200)
-    .json({ hobby1: "Watching football" }, { hobby2: "playing pool" });
+  res.status(200).json({ hobby: "Watching football" });
 });
 
 // Route 3: Respond with a motivational message about my dream
